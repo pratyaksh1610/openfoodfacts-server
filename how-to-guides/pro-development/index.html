@@ -284,6 +284,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/robotoff/" class="md-nav__link">
+        The Robotoff Project
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -317,6 +331,20 @@
           Tutorials
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/uploading-photo-to-a-product/" class="md-nav__link">
+        Uploading Images to the Open Food Facts API
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -390,6 +418,20 @@
     <li class="md-nav__item">
       <a href="../docker-developer-guide/" class="md-nav__link">
         Docker Developer's Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../download-images/" class="md-nav__link">
+        Download images
       </a>
     </li>
   
@@ -566,6 +608,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/taxonomy_build_cache/" class="md-nav__link">
+        Taxonomy build cache
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -623,6 +679,67 @@
       <a href="../../reference/api-v3/" class="md-nav__link">
         v3 OpenAPI documentation
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/api-cheatsheet/" class="md-nav__link">
+        Open Food Facts API - CheatSheet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4">
+          Api tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Api tutorials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Api tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/api-tutorials/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -708,7 +825,7 @@ Of course, do this inside-out to access the pro http server.</p>
 <p>Note that if you <a href="../use-direnv/">use direnv</a>, it should be fine, if you did not redefine variables set by <code>setenv-pro.sh</code>.</p>
 <p>An explanation of the setup can be found at <a href="../../explanations/pro-dev-setup/">pro-dev-setup.md</a></p>
 <p>If you want to see state of tasks, you can run:</p>
-<p><div class="highlight"><pre><span></span><code>docker-compose exec minion /opt/product-opener/scripts/minion.pl  minion job
+<p><div class="highlight"><pre><span></span><code>docker-compose exec minion /opt/product-opener/scripts/minion_producers.pl  minion job
 </code></pre></div>
 (add --help to see all options), or refer to https://docs.mojolicious.org/Minion/Command/minion/job</p>
 <p>You may also inspect database by running:

@@ -435,6 +435,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#make-dev-error-build_lang-error-13-cant-write-into-mntpodatadatalangopenfoodfactslocalhoststo" class="md-nav__link">
+    make dev error: [build_lang] Error 13 - can't write into /mnt/podata/data/Lang.openfoodfacts.localhost.sto
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -444,6 +451,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../robotoff/" class="md-nav__link">
+        The Robotoff Project
+      </a>
     </li>
   
 
@@ -482,6 +503,20 @@
           Tutorials
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/uploading-photo-to-a-product/" class="md-nav__link">
+        Uploading Images to the Open Food Facts API
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -553,6 +588,20 @@
     <li class="md-nav__item">
       <a href="../../how-to-guides/docker-developer-guide/" class="md-nav__link">
         Docker Developer's Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/download-images/" class="md-nav__link">
+        Download images
       </a>
     </li>
   
@@ -719,6 +768,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/taxonomy_build_cache/" class="md-nav__link">
+        Taxonomy build cache
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -776,6 +839,67 @@
       <a href="../../reference/api-v3/" class="md-nav__link">
         v3 OpenAPI documentation
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/api-cheatsheet/" class="md-nav__link">
+        Open Food Facts API - CheatSheet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4">
+          Api tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Api tutorials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Api tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/api-tutorials/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -947,6 +1071,13 @@
           <li class="md-nav__item">
   <a href="#make-makefile154-import_sample_data-error-22" class="md-nav__link">
     make: *** [Makefile:154: import_sample_data] Error 22
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-dev-error-build_lang-error-13-cant-write-into-mntpodatadatalangopenfoodfactslocalhoststo" class="md-nav__link">
+    make dev error: [build_lang] Error 13 - can't write into /mnt/podata/data/Lang.openfoodfacts.localhost.sto
   </a>
   
 </li>
@@ -1132,9 +1263,14 @@ Click the Windows button, then type “environment properties” into the search
 <p><strong>Solution:</strong>
 Project needs Symlinks to be enabled.
 traces.result.sto is a symlink to allergens.result.sto</p>
-<p>On Windows, You have to enable the 'Developer Mode' in order to use the symlinks.
-To enable Developer Mode: Go under Settings &gt; Update &amp; Security &gt; 'For developers', and turn on the toggle for Developer Mode.
-On Windows systems, the git repository needs to be cloned with symlinks enabled.</p>
+<p>You have to enable the 'Developer Mode' in order to use the symlinks.
+To enable Developer Mode:</p>
+<ul>
+<li>on windows 10: Settings &gt; Update &amp; Security &gt; 'For developers' …</li>
+<li>on windows 11: Settings &gt; Privacy &amp; Security &gt; 'For developers' …</li>
+</ul>
+<p>and turn on the toggle for <em>Developer Mode</em>.</p>
+<p>On Windows systems, the git repository needs to be cloned with symlinks enabled.</p>
 <p>You need to remove current directory where you clone the project, and clone the project again, using right options:</p>
 <div class="highlight"><pre><span></span><code><span class="go">git clone -c core.symlinks=true git@github.com:openfoodfacts/openfoodfacts-server.git</span>
 </code></pre></div>
@@ -1188,6 +1324,20 @@ The output of this command should be:
 <p><strong>Note:</strong>
 To know more about docker-compose commands do read <a href="../../how-to-guides/docker-developer-guide/">this guide</a> </p>
 </blockquote>
+<h3 id="make-dev-error-build_lang-error-13-cant-write-into-mntpodatadatalangopenfoodfactslocalhoststo">make dev error: [build_lang] Error 13 - can't write into /mnt/podata/data/Lang.openfoodfacts.localhost.sto<a class="headerlink" href="#make-dev-error-build_lang-error-13-cant-write-into-mntpodatadatalangopenfoodfactslocalhoststo" title="Permanent link">#</a></h3>
+<p>When running <code>make dev</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="go">&lt;h1&gt;Software error:&lt;/h1&gt;</span>
+<span class="go">&lt;pre&gt;can&#39;t write into /mnt/podata/data/Lang.openfoodfacts.localhost.sto: Permission denied at /opt/product-opener/lib/ProductOpener/Store.pm line 234.</span>
+<span class="go">&lt;/pre&gt;</span>
+<span class="go">&lt;p&gt;</span>
+<span class="go">For help, please send mail to this site&#39;s webmaster, giving this error message</span>
+<span class="go">and the time and date of the error.</span>
+
+<span class="go">&lt;/p&gt;</span>
+<span class="go">make: *** [Makefile:126: build_lang] Error 13</span>
+</code></pre></div>
+<p><strong>Solution:</strong></p>
+<p>Use the powershell/cmd to run the make dev commands in windows.</p>
 
 
 
@@ -1224,13 +1374,13 @@ To know more about docker-compose commands do read <a href="../../how-to-guides/
       
       
         
-        <a href="../../tutorials/using-the-OFF-API-tutorial/" class="md-footer__link md-footer__link--next" aria-label="Next: Using the Open Food Facts API" rel="next">
+        <a href="../robotoff/" class="md-footer__link md-footer__link--next" aria-label="Next: The Robotoff Project" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Using the Open Food Facts API
+              The Robotoff Project
             </div>
           </div>
           <div class="md-footer__button md-icon">
